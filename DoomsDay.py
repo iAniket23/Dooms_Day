@@ -43,24 +43,24 @@ pygame.display.set_caption("Dooms Day")
 
 
 #char
-dav = [pygame.image.load('1.png'), pygame.image.load('2.png'), pygame.image.load('3.png'),
-           pygame.image.load('4.png'), pygame.image.load('5.png'), pygame.image.load('6.png'),
-           pygame.image.load('7.png'), pygame.image.load('8.png'), pygame.image.load('9.png'),
-           pygame.image.load('10.png')]
+dav = [pygame.image.load('Pictures\1.png'), pygame.image.load('Pictures\2.png'), pygame.image.load('Pictures\3.png'),
+           pygame.image.load('Pictures\4.png'), pygame.image.load('Pictures\5.png'), pygame.image.load('Pictures\6.png'),
+           pygame.image.load('Pictures\7.png'), pygame.image.load('Pictures\8.png'), pygame.image.load('Pictures\9.png'),
+           pygame.image.load('Pictures\10.png')]
 
 
-s1 = pygame.image.load('s1.png')
+s1 = pygame.image.load('Pictures\s1.png')
 
-devil = [pygame.image.load('1a.png'), pygame.image.load('2a.png'), pygame.image.load('3a.png'),
-             pygame.image.load('4a.png'), pygame.image.load('5a.png'), pygame.image.load('6a.png'),
-             pygame.image.load('7a.png'), pygame.image.load('8a.png'), pygame.image.load('9a.png'),
-             pygame.image.load('10a.png'), pygame.image.load('11a.png'), pygame.image.load('12a.png'),
-             pygame.image.load('13a.png'), pygame.image.load('14a.png'), pygame.image.load('15a.png')]
+devil = [pygame.image.load('Pictures\1a.png'), pygame.image.load('Pictures\2a.png'), pygame.image.load('Pictures\3a.png'),
+             pygame.image.load('Pictures\4a.png'), pygame.image.load('Pictures\5a.png'), pygame.image.load('Pictures\6a.png'),
+             pygame.image.load('Pictures\7a.png'), pygame.image.load('Pictures\8a.png'), pygame.image.load('Pictures\9a.png'),
+             pygame.image.load('Pictures\10a.png'), pygame.image.load('Pictures\11a.png'), pygame.image.load('Pictures\12a.png'),
+             pygame.image.load('Pictures\13a.png'), pygame.image.load('Pictures\14a.png'), pygame.image.load('Pictures\15a.png')]
 
 
 # music
 
-music = pygame.mixer.music.load('music.mp3')
+music = pygame.mixer.music.load('Music\music.mp3')
 pygame.mixer.music.play(-1)
 
 # mountains
@@ -234,7 +234,7 @@ def motion():
         xaxis = 0
 
     screen.fill((255, 69, 0))
-    surface = pygame.image.load('surface.jpg')
+    surface = pygame.image.load('Pictures\surface.jpg')
     screen.blit(surface, (0, 380))
 
 
@@ -294,7 +294,7 @@ def motion():
             stone()
             davpos()
         else:
-            end = pygame.image.load('end.jpg')
+            end = pygame.image.load('Pictures\end.jpg')
             screen.blit(end, (0, 380))
 
 
